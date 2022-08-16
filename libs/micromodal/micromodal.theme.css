@@ -1,0 +1,30 @@
+/**************************\
+  Basic Modal Styles
+\**************************/
+
+.modal__container {
+  background-color: #fff;
+  max-width: 600px;
+  max-height: 400px;
+  border-radius: 4px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+@media(max-width: 899px){
+  .modal__container{
+    max-width: 500px;
+  }
+}
+
+@media(max-width: 599px){
+  .modal__container{
+    max-width: 290px;
+    
+  }
+}
+
+
+
+
+

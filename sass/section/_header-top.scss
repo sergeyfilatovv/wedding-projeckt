@@ -1,0 +1,124 @@
+.header-top {
+    position: sticky;
+    top: -10px;
+    z-index: 1;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    background-color:rgb(245, 246, 241);
+    border-bottom: 3px solid rgb(212, 180, 18);
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        position: unset;
+        
+        
+    }
+
+
+}
+
+.header-top__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top__nav{
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        display: none;
+    }
+}
+// Добавляем/убираем класс для иконки гамбургер
+.header-top__mobile-nav{
+    display: none;
+
+   /* Mobile XS */
+   @media (max-width: 599px) {
+    display: block;
+    transition: 0.1s ease-in;
+    
+   }
+}
+
+.header-top__mobile-nav--active{
+    position: fixed;
+    right: 30px;
+    z-index: 10;
+    top: 40px;
+}
+// Добавляем/убираем класс для иконки гамбургер
+
+.header-top__nav-icons{
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 5px;
+    background-color: #000000;
+
+    &::after, &::before{
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 5px;
+        background-color: #000000;
+    }
+
+   &::before{
+    bottom: -10px;
+   }
+
+   &::after{
+    top: -10px;
+   }
+
+   /* Mobile */
+   @media (max-width: 899px) {
+       display: block;
+   }
+}
+
+    .header-top__nav-icons--active {
+    background-color: transparent;
+
+    &::before, &::after {
+        top: 0;
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+        
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+}
+
+.header-top__list {
+    display: flex;
+}
+
+.header-top__list > * + *{
+    margin-left: 80px;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        margin-left: 40px;
+    }
+
+}
+
+.header-top__line {
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 38px;
+    color: rgb(0, 0, 0);
+
+    &:hover{
+        color: rgb(212, 180, 18);
+        transition: 0.2s ease-in;
+    }
+}

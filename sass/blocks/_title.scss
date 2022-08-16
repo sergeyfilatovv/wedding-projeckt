@@ -1,0 +1,27 @@
+.title{
+    text-align: center;
+
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 60px;
+    
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+
+    color: #000000;
+
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        font-size: 26px;
+        line-height: 30px;
+    }
+}

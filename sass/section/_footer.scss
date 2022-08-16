@@ -1,0 +1,198 @@
+.footer{
+    background-color:rgb(0, 0, 0);
+    padding-top: 50px;
+    padding-bottom: 40px;
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+}
+
+.footer__wrapper {
+display: flex;
+justify-content: space-between;
+
+margin-bottom: 20px;
+
+/* Mobile XS */
+@media (max-width: 599px) {
+    flex-direction: column;
+    justify-content: unset;
+    align-items: center;
+    row-gap: 35px;
+}
+
+}
+
+.contacts{
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        width: 290px;
+    }
+}
+
+.contacts__title, .feedback__title {
+    margin-bottom: 30px;
+
+    font-family: 'Lora';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 31px;
+    
+    color: white;
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        font-size: 18px;
+
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+.contacts__bride, .contacts__bridegroom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 370px;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        width: 310px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        flex-direction: column;
+        justify-content: unset;
+        align-items: center;
+        row-gap: 10px;
+        width: 290px;
+    }
+}
+
+
+.contacts__name {
+    font-family: 'Lora';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 31px;
+    
+    color:rgb(212, 180, 18);
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        font-size: 17px;
+    }
+}
+
+.social-contacts__list {
+    display: flex;
+    justify-content: space-between;
+
+    width: 220px;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        width: 180px;
+    }
+}
+
+.social-contacts__link:hover{
+    filter: grayscale(0.7);
+}
+
+.mb-25{
+    margin-bottom: 25px;
+}
+
+.feedback{
+    /* Mobile */
+    @media (max-width: 899px) {
+        width: 190px;
+    }
+}
+
+.feedback__list > * + *{
+    margin-top: 12px;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        margin-top: 10px;
+    }
+}
+
+.feedback__line {
+    font-family: 'Lora';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.6;
+
+    color: white;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        display:flex;
+        flex-direction:column;
+
+        font-size: 16px;
+    }
+}
+
+.feedback__line > * + *{
+    margin-left: 70px;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        margin-left: 0;
+    }
+}
+
+.feedback__info{
+    display:inline-block;
+    width: 103px;
+}
+
+.feedback__link {
+    font-family: 'Lora';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    
+    color: #1A71D2;
+
+    &:hover{
+        color: #FF543E;
+    }
+
+    /* Tablet */
+    @media (max-width: 1139px) {
+        font-size: 18px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        font-size: 16px;
+    }
+}
+
+.footer__copyright {
+text-align: center;
+}
+
+.footer__family {
+    font-family: 'Lora';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 31px;
+    
+    color:rgb(212, 180, 18); 
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        font-size: 16px;
+    }
+}

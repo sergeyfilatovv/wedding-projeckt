@@ -1,0 +1,89 @@
+.button{
+    display: inline-block;
+    height: 60px;
+    padding: 10px 60px;
+
+
+    background: rgb(243, 217, 89);
+    border-radius: 22px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 40px;
+
+    color: rgba(2, 2, 2, 0.859);
+
+    &:hover{
+        background-color: rgb(151, 125, 10);
+        color: white;
+        transition: 0.2s ease-in;
+    }
+
+   
+}
+
+.button--active{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.button--block-1 {
+    // margin-bottom: 20px;
+
+    padding-left: 215px;
+    padding-right: 215px;
+    border-radius: 0px;
+    background-color: #FFFFFF;
+    border: 2px solid rgb(212, 180, 18);
+    box-shadow: 10px 10px 21px #d3d3d6, -10px -10px 21px #d3d3d6;
+    color: black;
+
+    &:hover{
+        background-color:rgb(247, 243, 227) ;
+        color: black;
+    }
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        padding-left: 175px;
+        padding-right: 175px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+}
+
+.button--block-2 {
+    // margin-bottom: 20px;
+
+    padding-left: 221px;
+    padding-right: 221px;
+    border-radius: 0px;
+    background-color: #FFFFFF;
+    border: 2px solid rgb(212, 180, 18);
+    box-shadow: 10px 10px 21px #d3d3d6, -10px -10px 21px #d3d3d6;
+    color: black;
+
+    &:hover{
+        background-color:rgb(247, 243, 227) ;
+        color: black;
+    }
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        padding-left: 181px;
+        padding-right: 182px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        padding-left: 116px;
+        padding-right: 116px;
+    }
+}
+

@@ -1,0 +1,109 @@
+.header {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/header/wedding-header.jpg);
+    height: 750px;
+    background-color: rgba(0, 0, 0, 0.421);
+    
+}
+
+.header-description {
+    width: 600px;
+    position: absolute;
+    top: 150px;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+    width: 550px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        /* Mobile */
+        @media (max-width: 899px) {
+            width: 500px;
+        }
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        width: 100%;
+        top: 60px;
+        left: 0px;
+    }
+}
+
+
+
+.header-description__title {
+    margin-bottom: 25px;
+
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 75px;
+    /* or 129% */
+
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        margin-bottom: 20px;
+        font-size: 50px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        margin-bottom: 12px;
+        font-size: 36px;
+        line-height: 55px;
+        text-align: center;
+    }
+}
+
+.header-description__subtitle{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: -0.005em;
+
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 3px 1px 1em rgb(3, 53, 255), 0 0 0.2em rgb(0, 0, 0);
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        font-size: 26px; 
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        font-size: 20px; 
+        text-align: center;
+    }
+}
+
+.header__arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 30px;
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        bottom: 50px;
+    }
+}
