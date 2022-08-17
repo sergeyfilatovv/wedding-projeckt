@@ -35,7 +35,7 @@
     bottom: -35px;
     width: 300px;
     height: 120px;
-    padding: 20px 15px;
+    padding: 15px 15px;
     border-radius: 21px 0px;
     background-color: #ffffffc3;
     box-shadow: 10px 10px 21px #d3d3d6, -10px -10px 21px #d3d3d6;
@@ -80,15 +80,28 @@
 }
 
 
-.card__description a:hover{
-    color: red;
+.card__link{
+    display: inline-block;
+    padding: 1px 10px;
+    background-color: #ffffffc3;
+    border-radius: 30px;
+    transition: 0.2s ease-in;
+    border: 1px solid black;
+    
+
+        &:hover{
+        color: #FEFFFB;
+        background-color: black;
+
     }
+}
 
 .card__title {
     font-family: 'Lora';
     font-weight: 500;
     font-size: 20px;
     line-height: 26px;
+    
     
     color: #000000;
 
