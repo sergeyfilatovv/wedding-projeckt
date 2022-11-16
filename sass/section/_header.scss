@@ -7,6 +7,10 @@
     height: 750px;
     background-color: rgba(0, 0, 0, 0.421);
     background-attachment:fixed, scroll;
+    /* Tablet */
+    @media (max-width: 1199px) {
+        background-attachment:scroll;
+    }
     
 }
 
